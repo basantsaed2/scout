@@ -31,16 +31,17 @@ const ChatIcon = () => (
 );
 
 const Testimonial = () => {
-  const icons = [<ActiveIcon />, <SpiralIcon />, <BoxIcon />, <ChatIcon />];
+  // Store icon components as functions instead of React elements
+  const iconComponents = [ActiveIcon, SpiralIcon, BoxIcon, ChatIcon];
   const [activeIcon, setActiveIcon] = useState(0);
 
   // Auto-rotate active icon
   useEffect(() => {
     const interval = setInterval(() => {
-      setActiveIcon((prev) => (prev + 1) % icons.length);
+      setActiveIcon((prev) => (prev + 1) % iconComponents.length);
     }, 3000);
     return () => clearInterval(interval);
-  }, [icons.length]);
+  }, [iconComponents.length]);
 
   return (
     <div className="bg-gradient-to-br from-gray-900 to-black text-white py-16 md:py-24 px-4 md:px-8">
@@ -48,7 +49,7 @@ const Testimonial = () => {
         <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center">
           {/* Left Column: 4 Icons with enhanced design */}
           <div className="order-2 md:order-1 flex flex-row md:flex-col gap-4 md:gap-6 justify-center">
-            {icons.map((icon, index) => (
+            {iconComponents.map((IconComponent, index) => (
               <div
                 key={index}
                 className={`flex items-center justify-center p-3 md:p-4 rounded-xl transition-all duration-500 transform ${
@@ -58,7 +59,7 @@ const Testimonial = () => {
                 }`}
                 onMouseEnter={() => setActiveIcon(index)}
               >
-                {icon}
+                <IconComponent />
               </div>
             ))}
           </div>
@@ -98,7 +99,7 @@ const Testimonial = () => {
 
           {/* Right Column: 4 Icons with enhanced design */}
           <div className="order-3 flex flex-row md:flex-col gap-4 md:gap-6 justify-center">
-            {icons.map((icon, index) => (
+            {iconComponents.map((IconComponent, index) => (
               <div
                 key={index}
                 className={`flex items-center justify-center p-3 md:p-4 rounded-xl transition-all duration-500 transform ${
@@ -108,7 +109,7 @@ const Testimonial = () => {
                 }`}
                 onMouseEnter={() => setActiveIcon(index)}
               >
-                {icon}
+                <IconComponent />
               </div>
             ))}
           </div>

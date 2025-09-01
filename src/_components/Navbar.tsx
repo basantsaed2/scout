@@ -2,10 +2,8 @@
 
 import { useState } from 'react'
 import { Button } from '@/_components/ui/button'
-import { Card, CardContent } from '@/_components/ui/card'
-import { Badge } from '@/_components/ui/badge'
-import { ArrowRight, Star, Menu, X } from 'lucide-react'
-import { FaGithub, FaStarOfLife } from "react-icons/fa6";
+import { Menu, X } from 'lucide-react'
+import {  FaStarOfLife } from "react-icons/fa6";
 
 // Scout Navbar Component - Enhanced with working responsive menu
 const Navbar = () => {
