@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
-import { BarChart3, Play, Square, Plus, ChevronRight } from "lucide-react";
+import { BarChart3, Play, Square, Plus, ChevronRight, LucideIcon } from "lucide-react";
 
 interface Action {
-  icon: any;
+  icon: LucideIcon;
   title: string;
   type: string;
   variable: string;

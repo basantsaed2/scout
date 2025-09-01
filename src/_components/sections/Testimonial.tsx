@@ -1,5 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 // Enhanced SVG components with more visual interest
 const ActiveIcon = () => (
@@ -72,17 +73,19 @@ const Testimonial = () => {
               <div className="absolute top-0 left-8 w-16 h-1 bg-gradient-to-r from-purple-500 to-blue-500 rounded-b-full"></div>
               
               <p className="text-xl md:text-2xl lg:text-3xl font-medium max-w-3xl leading-relaxed mb-8 relative">
-                <span className="absolute -left-6 -top-4 text-5xl text-purple-500/30 font-serif">"</span>
+                <span className="absolute -left-6 -top-4 text-5xl text-purple-500/30 font-serif">&quot;</span>
                 Scout is an indispensable tool for our Engineering, DS and Sales teams to engage with our customers. We rely on Scout daily, making it an integral part of our operations.
-                <span className="absolute -right-6 -bottom-6 text-5xl text-blue-500/30 font-serif">"</span>
+                <span className="absolute -right-6 -bottom-6 text-5xl text-blue-500/30 font-serif">&quot;</span>
               </p>
               
               <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
                 <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-purple-500/30 shadow-lg">
-                  <img 
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" 
-                    alt="Vijaye Raji" 
-                    className="object-cover w-full h-full"
+                  <Image
+                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    alt="Vijaye Raji"
+                    width={64}
+                    height={64}
+                    className="object-cover"
                   />
                 </div>
                 <div className="text-left">

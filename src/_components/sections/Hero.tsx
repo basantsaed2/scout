@@ -1,6 +1,5 @@
-import { Star, ArrowRight } from 'lucide-react';
 import { Button } from '@/_components/ui/button';
-import { FaGithub, FaStarOfLife } from "react-icons/fa6";
+import { FaStarOfLife } from "react-icons/fa6";
 import { IoIosArrowForward } from "react-icons/io";
 
 const Hero = () => {
@@ -33,7 +32,7 @@ const Hero = () => {
           >
             AI for teams building
             <br />
-            <span className="text-[#d0d0d0]">what's next.</span>
+            <span className="text-[#d0d0d0]">what&apos;s next.</span>
           </h1>
 
           {/* Subtitle - exact text with improved line height */}

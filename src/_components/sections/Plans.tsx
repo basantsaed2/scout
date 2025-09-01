@@ -216,58 +216,58 @@ const PricingPlans = () => {
                 </div>
 
                 {/* Additional Card (Dedicated Support) */}
-               <div className=" text-white py-20 px-4 md:px-16">
-      <div className="container mx-auto">
-        <div className="bg-gray-900 rounded-3xl p-8 border border-gray-700 md:flex items-center justify-between">
-          {/* Left section: Text and list */}
-          <div className="md:w-3/5 md:pr-12 mb-8 md:mb-0">
-            <h3 className="text-3xl font-bold mb-4">Dedicated Support</h3>
-            <p className="text-gray-400 max-w-lg mb-6">
-              We are here to help you get started with a dedicated support engineer who can assist with scoping your first models and getting them deployed.
-            </p>
-            <p className="text-gray-400 font-bold mb-4 uppercase">
-              What's included
-            </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-400">
-              <div className="flex items-start">
-                <Check />
-                <span>Shared Slack Channel</span>
-              </div>
-              <div className="flex items-start">
-                <Check />
-                <span>Dedicated Support Engineer</span>
-              </div>
-              <div className="flex items-start">
-                <Check />
-                <span>Prompt Engineering Guidance</span>
-              </div>
-              <div className="flex items-start">
-                <Check />
-                <span>Context Sourcing Guidance</span>
-              </div>
-            </div>
-          </div>
+                <div className=" text-white py-20 px-4 md:px-16">
+                    <div className="container mx-auto">
+                        <div className="bg-gray-900 rounded-3xl p-8 border border-gray-700 md:flex items-center justify-between">
+                            {/* Left section: Text and list */}
+                            <div className="md:w-3/5 md:pr-12 mb-8 md:mb-0">
+                                <h3 className="text-3xl font-bold mb-4">Dedicated Support</h3>
+                                <p className="text-gray-400 max-w-lg mb-6">
+                                    We are here to help you get started with a dedicated support engineer who can assist with scoping your first models and getting them deployed.
+                                </p>
+                                <p className="text-gray-400 font-bold mb-4 uppercase">
+                                    What&apos;s included
+                                </p>
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-400">
+                                    <div className="flex items-start">
+                                        <Check />
+                                        <span>Shared Slack Channel</span>
+                                    </div>
+                                    <div className="flex items-start">
+                                        <Check />
+                                        <span>Dedicated Support Engineer</span>
+                                    </div>
+                                    <div className="flex items-start">
+                                        <Check />
+                                        <span>Prompt Engineering Guidance</span>
+                                    </div>
+                                    <div className="flex items-start">
+                                        <Check />
+                                        <span>Context Sourcing Guidance</span>
+                                    </div>
+                                </div>
+                            </div>
 
-          {/* Right section: Pricing and button */}
-          <div className="md:w-2/5 flex flex-col items-center p-8 rounded-2xl border border-gray-700 relative">
-            <div className="absolute top-0 right-0 p-2">
-              <span className="text-purple-400">
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M10 2a8 8 0 100 16 8 8 0 000-16zM5.5 8.5a.5.5 0 01.5-.5h4a.5.5 0 01.5.5v3a.5.5 0 01-.5.5H6a.5.5 0 01-.5-.5v-3zM10 7.5a.5.5 0 01.5-.5h4a.5.5 0 01.5.5v4a.5.5 0 01-.5.5h-4a.5.5 0 01-.5-.5v-4z" clipRule="evenodd" fillRule="evenodd" />
-                </svg>
-              </span>
-            </div>
-            <p className="text-gray-400 uppercase text-sm mb-2">Add on</p>
-            <h4 className="text-5xl font-bold">$750</h4>
-            <p className="text-gray-400 mb-6">monthly</p>
-            <button className="bg-gray-700 text-gray-400 font-semibold py-3 px-6 rounded-full w-full hover:bg-gray-600 transition-colors">
-              Request Access
-            </button>
-            <p className="text-gray-500 text-xs mt-4">No long term contract obligation.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+                            {/* Right section: Pricing and button */}
+                            <div className="md:w-2/5 flex flex-col items-center p-8 rounded-2xl border border-gray-700 relative">
+                                <div className="absolute top-0 right-0 p-2">
+                                    <span className="text-purple-400">
+                                        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M10 2a8 8 0 100 16 8 8 0 000-16zM5.5 8.5a.5.5 0 01.5-.5h4a.5.5 0 01.5.5v3a.5.5 0 01-.5.5H6a.5.5 0 01-.5-.5v-3zM10 7.5a.5.5 0 01.5-.5h4a.5.5 0 01.5.5v4a.5.5 0 01-.5.5h-4a.5.5 0 01-.5-.5v-4z" clipRule="evenodd" fillRule="evenodd" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <p className="text-gray-400 uppercase text-sm mb-2">Add on</p>
+                                <h4 className="text-5xl font-bold">$750</h4>
+                                <p className="text-gray-400 mb-6">monthly</p>
+                                <button className="bg-gray-700 text-gray-400 font-semibold py-3 px-6 rounded-full w-full hover:bg-gray-600 transition-colors">
+                                    Request Access
+                                </button>
+                                <p className="text-gray-500 text-xs mt-4">No long term contract obligation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );
