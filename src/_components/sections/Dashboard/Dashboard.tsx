@@ -5,13 +5,14 @@ import { Globe, BarChart3, Layers, Puzzle, FileText, Settings, Zap, Folder } fro
 import MainContent from "./MainContent";
 import RightPanel from "./RightPanel";
 import Sidebar from "./Sidebar";
+import SidebarLogo from "@/Assast/SidebarLogo";
 
 const DataTable = () => {
   const [activeTab, setActiveTab] = useState("Statsbot");
 
   // Updated sidebarItems array with all icons from the design
   const sidebarItems = [
-    { icon: Globe, label: "Acme", badge: "4" },
+    { icon: SidebarLogo, label: "Acme", badge: "4" },
     // { icon: faInbox, label: "Inbox" },
     { icon: BarChart3, label: "Analytics" },
     { icon: Layers, label: "Collections" },

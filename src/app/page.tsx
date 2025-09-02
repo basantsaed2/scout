@@ -5,6 +5,7 @@ import Plans from "@/_components/sections/Plans";
 import Testimonial from "@/_components/sections/Testimonial";
 import Dashboard from "@/_components/sections/Dashboard/Dashboard";
 import Services from "@/_components/sections/Services";
+import CTA from "@/_components/sections/CTA";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <Hero />
         <Dashboard />
         <Services />
+        <CTA/>
         <Testimonial />
         <Plans />
       </main>
