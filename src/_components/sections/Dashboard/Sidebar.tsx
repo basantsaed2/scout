@@ -1,6 +1,7 @@
-"use client";
+// src/app/_components/Sidebar.tsx
 import React from "react";
 import { Plus, LucideIcon } from "lucide-react";
+import SidebarLogo from "@/Assast/SidebarLogo";
 
 interface SidebarProps {
   apps: { name: string; active?: boolean }[];
@@ -11,6 +12,12 @@ interface SidebarProps {
 const Sidebar: React.FC<SidebarProps> = ({ apps, sidebarItems, setActiveTab }) => {
   return (
     <div className="sm:w-full md:w-64 bg-[#0f0f0f] border-r border-gray-800 flex flex-col">
+      {/* Render SidebarLogo separately */}
+      <div className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-800 cursor-pointer transition-colors">
+        <SidebarLogo />
+        <span className="text-sm text-gray-300 flex-1">Acme</span>
+        <span className="bg-blue-600 text-xs px-2 py-1 rounded text-white">4</span>
+      </div>
       {/* Main Navigation */}
       <div className="p-4 space-y-2">
         {sidebarItems.map((item, index) => (
@@ -28,7 +35,6 @@ const Sidebar: React.FC<SidebarProps> = ({ apps, sidebarItems, setActiveTab }) =
           </div>
         ))}
       </div>
-
       {/* Apps Section */}
       <div className="px-4 py-2 border-t border-gray-800">
         <div className="flex items-center justify-between mb-3">
