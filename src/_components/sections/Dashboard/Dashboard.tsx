@@ -1,7 +1,7 @@
 // src/app/_components/DataTable.jsx
 "use client";
 import React, { useState } from "react";
-import { Globe, BarChart3, Layers, Puzzle, FileText, Settings, Zap, Folder, Inbox } from "lucide-react";
+import { Globe, BarChart3, Layers, Puzzle, FileText, Settings, Zap, Folder, Inbox, LucideIcon } from "lucide-react";
 import MainContent from "./MainContent";
 import RightPanel from "./RightPanel";
 import Sidebar from "./Sidebar";
@@ -9,8 +9,8 @@ import Sidebar from "./Sidebar";
 const Dashboard = () => {
   const [activeTab, setActiveTab] = useState("Statsbot");
 
-  // Updated sidebarItems array with all icons from the design
-  const sidebarItems = [
+  // Explicitly type sidebarItems to match SidebarProps
+  const sidebarItems: { icon: LucideIcon; label: string; badge?: string }[] = [
     { icon: Inbox, label: "Inbox" },
     { icon: BarChart3, label: "Analytics" },
     { icon: Layers, label: "Collections" },
